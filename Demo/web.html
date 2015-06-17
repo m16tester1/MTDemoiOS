@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>MonkeyTalk</title>
+<style>
+#output { padding:8px 4px; color:#666; background-color:#eee; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; border:1px solid #ccc; }
+</style>
+</head>
+
+<body>
+<form name="frm">
+<input type="text" id="userInput" value="Hello!" /><br />
+
+<textarea rows="3" cols="20" id="txtarea">This is a textarea</textarea><br />
+
+<select id="Fruits" name="Fruits">
+<option value="Apple">Apple</option>
+<option value="Banana">Banana</option>
+<option value="Orange">Orange</option>
+<option value="Grape">Grape</option>
+</select><br />
+
+<input type="radio" name="rbox" id="a" value="A" checked="checked" /><label for="a">A</label>
+<input type="radio" name="rbox" id="b" value="B" /><label for="b">B</label>
+<input type="radio" name="rbox" id="c" value="C" /><label for="c">C</label>
+<br />
+
+<input type="checkbox" name="cbox" id="d" value="D" /><label for="d">D</label>
+<input type="checkbox" name="cbox" id="e" value="E" /><label for="e">E</label>
+<input type="checkbox" name="cbox" id="f" value="F" /><label for="f">F</label>
+<br />
+
+<input type="button" name="btn" value="GO!" onclick="go()" />
+</form>
+
+<p>Output:</p>
+<p id="output"></p> 
+
+<script>
+function go() {
+  var inp = document.getElementById('userInput').value;
+  var txt = document.getElementById('txtarea').value;
+  
+  var dd = document.getElementById("Fruits").options[document.getElementById("Fruits").selectedIndex].value;
+  
+  var r = (document.getElementById("a").checked ? "A" : (document.getElementById("b").checked ? "B" : "C"));
+  
+  var d = (document.getElementById("d").checked ? ", D" : "");
+	var e = (document.getElementById("e").checked ? ", E" : "");
+	var f = (document.getElementById("f").checked ? ", F" : "");
+        
+  document.getElementById('output').innerHTML = inp + ', ' + txt + ', ' + dd + ', ' + r + d + e + f;
+}
+</script>
+
+</body>
+</html>
