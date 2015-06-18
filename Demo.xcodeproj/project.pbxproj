@@ -30,7 +30,6 @@
 		444C05C314EDB36900027FD5 /* FMDElementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44C4C8D014BE5156007733E1 /* FMDElementsViewController.xib */; };
 		444C05C414EDB36900027FD5 /* FMDDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44C4C8D514BE5300007733E1 /* FMDDetailsViewController.xib */; };
 		446B088117970CEC000654D2 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 446B087F17970CEC000654D2 /* MainWindow-iPad.xib */; };
-		44A190D7150545B700E60CBA /* libMonkeyTalk-2.0.10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A190D6150545B700E60CBA /* libMonkeyTalk-2.0.10.a */; };
 		D0B409B015A5FD7700AA9851 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B409A315A53F1200AA9851 /* WebViewController.m */; };
 		D0B409B115A5FD7B00AA9851 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B409A415A53F1200AA9851 /* WebViewController.xib */; };
 		D0C0FFC215AF73040081826D /* web.html in Resources */ = {isa = PBXBuildFile; fileRef = D0C0FFC015AF73040081826D /* web.html */; };
@@ -113,7 +112,6 @@
 				444C05BB14EDB36900027FD5 /* CoreGraphics.framework in Frameworks */,
 				4408847614EDBBD000AD6588 /* libsqlite3.dylib in Frameworks */,
 				4408847914EDBCD600AD6588 /* CFNetwork.framework in Frameworks */,
-				44A190D7150545B700E60CBA /* libMonkeyTalk-2.0.10.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
